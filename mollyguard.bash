@@ -1,4 +1,22 @@
 #!/bin/bash
+#########################
+# How to use
+# Naviage to the aws/securityCredentials page and generate a x.509 certificate
+# take both the public and the private certificate file and place them in $keys (default is /etc/ssl/private/aws/)
+# rename the public and private certificate foo.pub and foo.key respectivly
+# you may provide this script with any number of certificate pairs
+#
+# What it does
+# This script will enable termination protection on all of your machines. 
+# Bascially it covers your ass.
+#
+# Aric Gardner 2013
+#
+# Copyleft Information
+# Usage of the works is permitted provided that this instrument is retained with the works, so that any entity that uses the works is notified of this instrument.
+# DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
+##########################
+
 keys="/etc/ssl/private/aws/*"
 version="1.0"
 
